@@ -2,10 +2,10 @@ applications:
 - name: tracker-allocations
   path: ./applications/allocations-server/build/libs/allocations-server.jar
   routes:
-  - route: allocations-pal-harsha-shijna.apps.chicken.pal.pivotal.io
+  - route: allocations-pal-harsha-shijna.apps.pcf.paltraining.perficient.com
   memory: 1G
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: https://allocations-pal-harsha-shijna.apps.chicken.pal.pivotal.io
+    REGISTRATION_SERVER_ENDPOINT: https://allocations-pal-harsha-shijna.apps.pcf.paltraining.perficient.com
   services:
   - tracker-allocations-database
