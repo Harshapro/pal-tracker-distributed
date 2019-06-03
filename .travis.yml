@@ -89,6 +89,7 @@ jobs:
         - ./gradlew testMigrate
       script:
         - APPLICATION=timesheets
+        - chmod +x gradlew
         - ./gradlew clean :applications:${APPLICATION}-server:build
       before_deploy:
         - git config --local user.name "Travis CI"
